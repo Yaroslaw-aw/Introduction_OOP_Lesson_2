@@ -25,7 +25,7 @@
 
             catShelter.CatsInfo();
 
-            for (int i = 0; i < catShelter.size; i++)
+            for (int i = 0; i < catShelter.cats.Length; i++)
             {
                 catShelter.cats[i].Eat(plate.Food);
                 plate.EatenFood(catShelter.cats[i].Appetite);
