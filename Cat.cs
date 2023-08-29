@@ -6,12 +6,12 @@
         int appetite;
         bool satiety = false;
         string Name { get { return this.name; } }
-        public int Appetite { get { return this.appetite; } }
+        public int Appetite { get { return this.appetite; } set { if (value > 0) this.appetite = value; } }
 
         public Cat(string name, int appetite)
         {
             this.name = name;
-            this.appetite = appetite;
+            this.Appetite = appetite;
         }
 
         public void Eat(int food)
