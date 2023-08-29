@@ -3,7 +3,6 @@
     internal class Cats
     {
         public Cat[] cats;
-        public int size = 0;
 
         public Cats()
         {
@@ -15,7 +14,6 @@
             {
                 int appetite = new Random().Next(10, 20);
                 cats[i] = new Cat(string.Format($"Cat{i + 1}"), appetite);
-                this.size++;
             }
         }
 
