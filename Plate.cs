@@ -9,13 +9,12 @@
 
         public Plate(int food)
         {
-            if (food > 0)
-                this.Food = food;
+            this.Food = food;
         }
 
         public void FoodInfo()
         {
-            Console.WriteLine($"{this.GetType().Name}: {this.Food}");            
+            Console.WriteLine($"{this.GetType().Name}: {this.Food}");
         }
 
         public void AddFood(int food)

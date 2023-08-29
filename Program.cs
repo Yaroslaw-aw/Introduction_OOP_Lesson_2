@@ -21,10 +21,13 @@
             Console.WriteLine(new string('-', 50));
 
             catShelter.CatsInfo();
+            Console.WriteLine(new string('-', 50));
 
             for (int i = 0; i < catShelter.cats.Length; i++)
             {
                 catShelter.cats[i].Eat(plate.EatenFood(catShelter.cats[i].Appetite));
+                catShelter.cats[i].CatInfo();
+                plate.FoodInfo();
             }
             Console.WriteLine(new string('-', 50));
 
