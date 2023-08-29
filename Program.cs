@@ -12,13 +12,11 @@
             plate.AddFood(18);
             plate.FoodInfo();
 
-
-            cat.Eat(plate.Food);
-            plate.EatenFood(cat.Appetite);
+            cat.Eat(plate.EatenFood(cat.Appetite));
+            //plate.EatenFood(cat.Appetite);
 
             cat.CatInfo();
             plate.FoodInfo();
-
 
             Cats catShelter = new Cats();
             Console.WriteLine(new string('-', 50));
@@ -27,8 +25,7 @@
 
             for (int i = 0; i < catShelter.cats.Length; i++)
             {
-                catShelter.cats[i].Eat(plate.Food);
-                plate.EatenFood(catShelter.cats[i].Appetite);
+                catShelter.cats[i].Eat(plate.EatenFood(catShelter.cats[i].Appetite));
             }
             Console.WriteLine(new string('-', 50));
 
