@@ -13,7 +13,6 @@
             plate.FoodInfo();
 
             cat.Eat(plate.EatenFood(cat.Appetite));
-            //plate.EatenFood(cat.Appetite);
 
             cat.CatInfo();
             plate.FoodInfo();

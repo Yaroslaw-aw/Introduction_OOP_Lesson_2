@@ -24,11 +24,11 @@
                 this.Food += food;
         }
 
-        public int EatenFood(int food)
+        public int EatenFood(int appetite)
         {
-            if (this.Food < food) return 0;
-            else { this.Food -= food; }
-            return this.Food + food;
+            if (this.Food < appetite) return 0;
+            else { this.Food -= appetite; }
+            return this.Food + appetite;
         }
     }
 }
